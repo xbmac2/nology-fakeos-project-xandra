@@ -103,13 +103,14 @@ body {
 
 // modal styles
 
-dialog {
+.modal {
   height: 60%;
   width: 50%;
   position: fixed;
   top: 15.75vh;
   left: 25%;
   border: 2px solid white;
+  background-color: white;
 }
 
 .close-btn {
@@ -125,5 +126,5 @@ dialog {
 }
 
 #game-app {
-  
+
 }
