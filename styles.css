@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("wp5493583-windows-10-default-wallpapers.jpg");
+  background-color: #33ccff;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#desktop {
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+  align-items: center;
+  margin: 1px;
+}
+
+.icon-container:hover {
+  background-color: rgba(128, 204, 255, 0.3764705882);
+  border: 1px solid #80ccff;
+}
+
+.app-icon {
+  padding: 5% 10% 0% 10%;
+}
+
+.icon-name {
+  color: white;
+  text-shadow: 0px 2px 5px #000033;
+  font-size: small;
+  text-align: center;
+}
+
+#taskbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#taskbar {
+  height: 48px;
+  width: 100%;
+  background-color: #1c2d3d;
+  position: fixed;
+  bottom: 0;
+}
+
+#menuButton {
+  width: 48px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuButton:hover {
+  background-color: #353f47;
+}
+
+#menuImage {
+  height: 50%;
+  width: 50%;
+}
+
+#clock {
+  width: 90px;
+  height: 100%;
+  color: white;
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#clock:hover {
+  background-color: #353f47;
+}
+
+.menu {
+  position: fixed;
+  bottom: 48px;
+  z-index: 3;
+  height: 350px;
+  width: 404px;
+  color: white;
+  background-color: #1f333a;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  height: 55px;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+}
+
+.menu-item:hover {
+  background-color: #344146;
+}
+
+.menu-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+}
+
+.menu-item-icon > img {
+  height: 40px;
+  width: 40px;
+}
+
+.menu-item-name {
+  width: 345px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-name > p {
+  margin-left: 8px;
+}
