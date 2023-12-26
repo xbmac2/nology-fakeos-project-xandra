@@ -23,10 +23,7 @@ body {
   gap: 2%;
 }
 
-#taskbar {
-  height: 7vh; //48px;
-  background-color: #000033;
-}
+
 
 .icon-container {
   display: flex;
@@ -64,7 +61,16 @@ body {
   justify-content: space-between;
 }
 
-#menu-button {
+#taskbar {
+  height: 48px; //7vh; //48px;
+  width: 100%;
+  background-color: #1c2d3d;
+
+  position: fixed;
+  bottom: 0;
+}
+
+#menuButton {
   // border: 1px solid white;
   width: 48px;
   height: 100%;
@@ -74,8 +80,8 @@ body {
   align-items: center;
 }
 
-#menu-button:hover {
-  background-color: #2c2c3f;
+#menuButton:hover {
+  background-color: #353f47;
 }
 
 #menu-image {
@@ -98,5 +104,71 @@ body {
 }
 
 #clock:hover {
-  background-color: #2c2c3f;
+  background-color: #353f47;
+}
+
+// menu styles below
+
+#menuContainer {
+  position: fixed;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  position: fixed;
+  bottom: 48px;
+  z-index: 3;
+
+  height: 350px;
+  width: 404px;
+
+  color: white;
+  background-color: #1f333a;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item { 
+  height: 55px;
+  width: 400px;
+
+  //border: 1px solid red;
+
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+}
+
+.menu-item:hover {
+  background-color: #344146;
+}
+
+.menu-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 55px;
+
+  //border: 1px solid purple;
+}
+
+.menu-item-icon > img {
+  height: 40px;
+  width: 40px;
+}
+
+.menu-item-name {
+  width: 345px;
+
+  //border: 1px solid yellow;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item-name > p {
+  margin-left: 8px;
 }
