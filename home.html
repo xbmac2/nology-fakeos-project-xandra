@@ -3,38 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./clock.js" defer></script>
-  <script src="./modals.js" defer></script>
+  <link rel="stylesheet" href="styles\styles.css">
+  <script src="js\todo-modal.js" defer></script>
+  <script src="js\modals.js" defer></script>
+  <script src="js\gallery-modal.js" defer></script>
+  <script src="js\clock.js" defer></script>
+  <script src="js\menu-modal.js" defer></script>
+  
   <title>FakeOS Windows 10</title>
 </head>
 <body>
   <section id="desktop">
-    <div class="icon-container">
-      <img id="top" class ="app-icon"  src="icons8-idea-64.png" alt="">
-      <p class="icon-name">Ideas App</p>
+    <div class="icon-container" id="todo">
+      <img class ="app-icon"  src="img\icons8-idea-64.png" alt="">
+      <p class="icon-name">To Do App</p>
     </div>
-    <div class="icon-container">
-      <img class ="app-icon"  src="icons8-idea-64.png" alt="">
-      <p class="icon-name">Ideas App</p>
+    <div class="icon-container" id="gallery">
+      <img class ="app-icon"  src="img\icons8-idea-64.png" alt="">
+      <p class="icon-name">Gallery App</p>
     </div>
     <div class="icon-container" id="game">
-      <img class ="app-icon"  src="icons8-idea-64.png" alt="">
+      <img class ="app-icon"  src="img\icons8-idea-64.png" alt="">
       <p class="icon-name">Game App</p>
-      <dialog id="game-app">
-        <button class="close-btn">X</button>
-        <p>Scenic Autumn</p>
-      </dialog>
     </div>
+
+    <dialog class="app-modal" id="todo-app">
+      <button class="close-btn" id="close-todo">X</button>
+      <div id="todo-app__header">
+        <h2>To Do</h2>
+        <input type="text" id="toDoInput" placeholder=" New task">
+        <span id="addTaskBtn">Add</span>
+      </div>
+
+      <ul id="task-list">
+        <li>Do homework</li>
+        <li>Go to gym</li>
+        <li>Meal prep</li>
+      </ul>
+    </dialog>
+
+    <dialog class="app-modal" id="galleryApp">
+      <button class="close-btn" id="closeGallery">X</button>
+      <div class="gallery-container">
+        <img src="img\gallery-app\Cropped_Image.png" alt="" class="gallery-image">
+        <img src="img\gallery-app\Cropped_Image(1).png" alt="">
+        <img src="img\gallery-app\Cropped_Image(2).png" alt="">
+        <img src="img\gallery-app\Cropped_Image(3).png" alt="">
+        <img src="img\gallery-app\Cropped_Image(4).png" alt="">
+        <img src="img\gallery-app\Cropped_Image0.png" alt="">
+        <img src="img\gallery-app\Cropped_Image1.png" alt="">
+        <img src="img\gallery-app\Cropped_Image000.png" alt="">
+      </div>
+    </dialog>
+
+    <dialog class="app-modal" id="game-app">
+      <button class="close-btn" id="close-game">X</button>
+      <p>Scenic Autumn</p>
+    </dialog>
 
   </section>
   <section id="taskbar">
-    <div id="menu-button">
-      <img id="menu-image" src="icons8-windows-10-30.png" alt="">
+    <span id="menuButton">
+      <img id="menu-image" src="img\icons8-windows-10-30.png" alt="">
+    </span>
+    <span id="clock">
+    </span>
+
+    <!-- <dialog id="menu">
+      <div class="menu-list">
+        <div class="menu-list-item">
+          <span class="app-icon"></span>
+          <span class="app-name">My To Do List</span>
+        </div>
+        <div class="menu-list-item">
+          <span class="app-icon"></span>
+          <span class="app-name">Aesthetic Gallery</span>
+        </div>
+        <div class="menu-list-item">
+          <span class="app-icon"></span>
+          <span class="app-name">Scenic Autumn Launcher</span>
+        </div>
+      </div>
+    </dialog> -->
+
+    <div id="menu2" hidden>
+      <div class="menu-list">
+        <div class="menu-list-item">
+          <span class="app-icon"></span>
+          <span class="app-name">My To Do List</span>
+        </div>
+        <div class="menu-list-item">
+          <span class="app-icon"></span>
+          <span class="app-name">Aesthetic Gallery</span>
+        </div>
+        <div class="menu-list-item">
+          <span class="app-icon"></span>
+          <span class="app-name">Scenic Autumn Launcher</span>
+        </div>
+      </div>
     </div>
-    <div id="clock">
-    </div>
+
   </section>
+
+  
   
 </body>
 </html>
