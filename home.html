@@ -75,7 +75,14 @@
   <!-- game launcher app -->
   <dialog class="app-modal" id="gameApp">
     <button class="close-btn" id="close-game">X</button>
-    <p>Scenic Autumn</p>
+    <div class="form-container">
+      <p>Scenic Autumn re-launches soon! <br> Subscribe for updates</p>
+      <form id ="form" action="/">
+        <input type="email" name="email" id="email" placeholder=" Email" required>
+        <input type="submit" value=" Subscribe ">
+        <div class="confirmation"></div>
+      </form>
+    </div>
   </dialog>
 </body>
 </html>
