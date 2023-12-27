@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./gallery-styles.css">
+  <link rel="stylesheet" href="./game-styles.css">
   <script src="js\clock.js" defer></script>
   <script src="js\menu.js" defer></script>
   <script src="js\gallery-modal.js" defer></script>
+  <script src="js\game-modal.js" defer></script>
   <title>FakeOS Windows 10</title>
 </head>
 <body>
@@ -23,7 +25,7 @@
     </div>
     <div class="icon-container" id="game">
       <img class ="app-icon"  src="img\desktop\icons8-idea-64.png" alt="">
-      <p class="icon-name">Game App</p>
+      <p class="icon-name">Scenic Autumn Launcher</p>
     </div>
 
   </section>
@@ -46,7 +48,7 @@
       <span class="menu-item-icon"><img src="img\desktop\icons8-idea-64.png" alt=""></span>
       <span class="menu-item-name"><p>Aesthetic Moodboard</p></span>
     </div>
-    <div class="menu-item">
+    <div class="menu-item" id="gameMenuItem">
       <span class="menu-item-icon"><img src="img\desktop\icons8-idea-64.png" alt=""></span>
       <span class="menu-item-name"><p>Scenic Autumn Launcher</p></span>
     </div>
@@ -69,6 +71,11 @@
       <img src="img\gallery-pictures\aesthetic-image8.png" alt="">
     </div>
   </dialog>
-  
+
+  <!-- game launcher app -->
+  <dialog class="app-modal" id="gameApp">
+    <button class="close-btn" id="close-game">X</button>
+    <p>Scenic Autumn</p>
+  </dialog>
 </body>
 </html>

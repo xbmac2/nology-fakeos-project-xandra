@@ -196,6 +196,10 @@ body {
   top: 0;
   right: 0;
   color: white;
-  background-color: none;
+  background-color: transparent;
   font-weight: bolder;
+
+    &:hover {
+      background-color: rgba(39, 39, 39, 0.548);
+    }
 }
