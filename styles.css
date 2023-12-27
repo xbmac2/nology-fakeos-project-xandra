@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("wp5493583-windows-10-default-wallpapers.jpg");
+  background-image: url("img/desktop/wp5493583-windows-10-default-wallpapers.jpg");
   background-color: #33ccff;
   background-size: cover;
   display: flex;
@@ -133,4 +133,30 @@ body {
 
 .menu-item-name > p {
   margin-left: 8px;
+}
+
+.app-modal {
+  height: 60%;
+  width: 50%;
+  position: fixed;
+  top: 15.75vh;
+  left: 25%;
+  border: 2px solid white;
+}
+
+.title-bar {
+  height: 25px;
+  width: 100%;
+}
+
+.close-btn {
+  width: 40px;
+  height: 25px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: none;
+  font-weight: bolder;
 }
