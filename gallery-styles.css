@@ -17,13 +17,9 @@
 
 .gallery__title-bar {
   background-color: black;
-    /* & > p {
-      color: white;
-      padding: 4px;
-      padding-top: 5px;
-      margin-left: 26px;
-      font-size: smaller;
-    } */
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 #closeGallery {
