@@ -6,6 +6,7 @@
 
 .form-container {
   background-color: #7c7c7c93;
+  box-shadow: 4px 4px;
   border-radius: 2px;
 
   height: 45%;
@@ -14,4 +15,22 @@
   top: 40px;
   left: 27.5%;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.form-container p {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.confirmation {
+  padding: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
