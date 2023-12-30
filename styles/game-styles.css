@@ -1,6 +1,6 @@
 #gameApp {
   background-color: #f17746;
-  background-image: url("img/game-launcher/illustration-5120762_1920.jpg");
+  background-image: url("../img/game-launcher/illustration-5120762_1920.jpg");
   background-size: 100% 100%;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .form-container p {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: large;
   font-weight: bold;
   padding: 5px;
@@ -32,5 +32,5 @@
 
 .confirmation {
   padding: 20px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
