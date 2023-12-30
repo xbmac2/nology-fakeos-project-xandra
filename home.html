@@ -6,17 +6,19 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./gallery-styles.css">
   <link rel="stylesheet" href="./game-styles.css">
+  <link rel="stylesheet" href="./todo-styles.css">
   <script src="js\clock.js" defer></script>
   <script src="js\menu.js" defer></script>
   <script src="js\gallery-modal.js" defer></script>
   <script src="js\game-modal.js" defer></script>
+  <script src="js\todo-modal.js" defer></script>
   <title>FakeOS Windows 10</title>
 </head>
 <body>
   <!-- desktop icons -->
   <section id="desktop">
-    <div class="icon-container">
-      <img id="top" class ="app-icon"  src="img\desktop\icons8-to-do-list-64(1).png" alt="">
+    <div class="icon-container" id="toDo">
+      <img id="todo" class ="app-icon"  src="img\desktop\icons8-to-do-list-64(1).png" alt="">
       <p class="icon-name">To Do List</p>
     </div>
     <div class="icon-container" id="gallery">
@@ -40,7 +42,7 @@
 
   <!-- menu -->
   <div class="menu" id="menu">
-    <div class="menu-item">
+    <div class="menu-item" id="toDoMenuItem">
       <span class="menu-item-icon"><img src="img\desktop\icons8-to-do-list-64(1).png" alt=""></span>
       <span class="menu-item-name"><p>To Do List</p></span>
     </div>
@@ -54,7 +56,20 @@
     </div>
   </div>
 
-  <!-- app modals -->
+  <!-- App Modals -->
+  <!-- To Do app -->
+  <dialog class="app-modal" id="toDoApp">
+    <button class="close-btn" id="closeToDo">X</button>
+    <div class="todo-header">
+      <h2>To Do</h2>
+      <p class="instructions">Single click to cross off task, double click to remove task from list</p>
+      <input type="text" id="toDoInput" placeholder=" New task">
+      <button id="addTaskBtn">Add  Task</button>
+    </div>
+    <ul id="taskList">
+
+    </ul>
+  </dialog>
 
   <!-- gallery app -->
   <dialog class="app-modal" id="galleryApp">
@@ -74,7 +89,7 @@
 
   <!-- game launcher app -->
   <dialog class="app-modal" id="gameApp">
-    <button class="close-btn" id="close-game">X</button>
+    <button class="close-btn" id="closeGame">X</button>
     <div class="form-container">
       <p>Scenic Autumn re-launches soon! <br> Subscribe for updates</p>
       <form id ="form" action="/">

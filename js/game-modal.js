@@ -8,7 +8,7 @@ const openGameApp = () => {
 
 gameIconBox.addEventListener("dblclick", openGameApp);
 
-const closeButton = document.querySelector("#close-game");
+const closeButton = document.querySelector("#closeGame");
 const closeApp = () => {
   if (document.querySelector(".confirmation").textContent === "Successfully subscribed!") {
     location.reload();
