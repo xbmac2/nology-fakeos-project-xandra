@@ -1,0 +1,59 @@
+#toDoApp {
+  background: rgb(251,226,192);
+  background: -moz-linear-gradient(321deg, rgba(251,226,192,1) 0%, rgba(252,237,215,1) 66%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(321deg, rgba(251,226,192,1) 0%, rgba(252,237,215,1) 66%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(321deg, rgba(251,226,192,1) 0%, rgba(252,237,215,1) 66%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fbe2c0",endColorstr="#ffffff",GradientType=1); 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&display=swap');
+
+.todo-header {
+  text-align: center;
+
+    & > h2 {
+      font-family: 'Ballet', cursive;
+      font-size: 50px;
+      color: #ed8578;
+      padding: 5px;
+    }
+
+    & > input {
+      margin: 0;
+      border: none;
+      border-radius: 4px;
+      width: 65%;
+      height: 25px;
+    }
+
+    & > button {
+      width: 15%;
+      height: 25px;
+      // background-color: transparent;
+      color: #474336;
+      font-family: 'Alegreya SC', serif;
+    }
+}
+
+#closeToDo {
+  color: #474336;
+}
+
+.instructions {
+  padding-bottom: 8px;
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #474336;
+}
+
+.tasklist-item {
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  font-family: 'Alegreya SC', serif;
+  
+}
+
+.tasklist-item:hover {
+  background-color: rgba(160, 160, 160, 0.199);
+}
