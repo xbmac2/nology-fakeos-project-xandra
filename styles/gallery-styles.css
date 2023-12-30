@@ -3,8 +3,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: black;
-
-  /* height: 100%; */
 }
 
 .gallery-container > img {
@@ -17,7 +15,7 @@
 
 .gallery__title-bar {
   background-color: black;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }

@@ -1,5 +1,4 @@
 //open from desktop
-
 const toDoAppIcon = document.querySelector("#toDo");
 const toDoModal = document.querySelector("#toDoApp");
 

@@ -8,15 +8,6 @@ const openGameApp = () => {
 
 gameIconBox.addEventListener("dblclick", openGameApp);
 
-const closeButton = document.querySelector("#closeGame");
-const closeApp = () => {
-  if (document.querySelector(".confirmation").textContent === "Successfully subscribed!") {
-    location.reload();
-  }
-  gameModal.close();
-};
-closeButton.addEventListener("click", closeApp);
-
 //open from menu
 document.querySelector("#gameMenuItem").addEventListener("click", () => {
   document.querySelector("#menu").style.display = "none";
@@ -30,3 +21,12 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   document.querySelector(".confirmation").textContent = "Successfully subscribed!";
 })
+
+//close app modal
+const closeButton = document.querySelector("#closeGame");
+const closeApp = () => {
+  document.querySelector("#email").value = "";
+  document.querySelector(".confirmation").textContent = "";
+  gameModal.close();
+};
+closeButton.addEventListener("click", closeApp);
