@@ -139,6 +139,7 @@ body {
   top: 15.75vh;
   left: 25%;
   border: 2px solid white;
+  background-color: black;
 }
 
 .title-bar {
