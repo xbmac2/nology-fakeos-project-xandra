@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles\desktop-styles.css">
+  <link rel="stylesheet" href="styles\gallery-styles.css">
+  <link rel="stylesheet" href="styles\game-styles.css">
+  <link rel="stylesheet" href="styles\todo-styles.css">
+  <script src="js\clock.js" defer></script>
+  <script src="js\menu.js" defer></script>
+  <script src="js\gallery-modal.js" defer></script>
+  <script src="js\game-modal.js" defer></script>
+  <script src="js\todo-modal.js" defer></script>
+  <title>FakeOS Windows 10</title>
+</head>
+<body>
+  <!-- Desktop Icons -->
+  <section class="desktop">
+    <div class="icon-container" id="toDo">
+      <img class ="app-icon"  src="img\desktop\icons8-to-do-list-64(1).png" alt="">
+      <p class="icon-name">To Do List</p>
+    </div>
+    <div class="icon-container" id="gallery">
+      <img class ="app-icon"  src="img\desktop\icons8-columns-64.png" alt="">
+      <p class="icon-name">Aesthetic Moodboard</p>
+    </div>
+    <div class="icon-container" id="game">
+      <img class ="app-icon"  src="img\desktop\icons8-deer-64.png" alt="">
+      <p class="icon-name">Scenic Autumn Launcher</p>
+    </div>
+    <div class="icon-container" id="credits">
+      <img class ="app-icon"  src="img\desktop\icons8-icons8-64.png" alt="">
+      <p class="icon-name">Icons by Icons8</p>
+    </div>
+  </section>
+
+  <!-- Taskbar -->
+  <section class="taskbar">
+    <div class="menu-button" id="menuButton">
+      <img class="menu-image" id="menuImage" src="img\desktop\icons8-windows-10-30.png" alt="">
+    </div>
+    <div class="clock" id="clock">
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <div class="menu" id="menu">
+    <div class="menu-item" id="galleryMenuItem">
+      <span class="menu-item-icon"><img src="img\desktop\icons8-columns-64.png" alt=""></span>
+      <span class="menu-item-name"><p>Aesthetic Moodboard</p></span>
+    </div>
+    <div class="menu-item" id="gameMenuItem">
+      <span class="menu-item-icon"><img src="img\desktop\icons8-deer-64.png" alt=""></span>
+      <span class="menu-item-name"><p>Scenic Autumn Launcher</p></span>
+    </div>
+    <div class="menu-item" id="toDoMenuItem">
+      <span class="menu-item-icon"><img src="img\desktop\icons8-to-do-list-64(1).png" alt=""></span>
+      <span class="menu-item-name"><p>To Do List</p></span>
+    </div>
+    <div class="menu-item">
+      <span class="menu-item-icon"><img src="img\desktop\icons8-icons8-64.png" alt=""></span>
+      <span class="menu-item-name"><p>Icons by Icons8</p></span>
+    </div>
+  </div>
+
+  <!-- App Modals -->
+  <!-- To Do app -->
+  <dialog class="app-modal" id="toDoApp">
+    <button class="close-btn" id="closeToDo">X</button>
+    <div class="todo-header">
+      <h2>To Do</h2>
+      <p class="instructions">Single click to cross off task, double click to remove task from list</p>
+      <input type="text" id="toDoInput" placeholder=" New task">
+      <button id="addTaskBtn">Add  Task</button>
+    </div>
+    <ul id="taskList">
+
+    </ul>
+  </dialog>
+
+  <!-- Gallery App -->
+  <dialog class="app-modal" id="galleryApp" class="gallery-app">
+    <div class="title-bar gallery__title-bar"><button class="close-btn" id="closeGallery">X</button></div>
+    
+    <div class="gallery-container">
+      <img src="img\gallery-pictures\aesthetic-image1.png" alt="" class="gallery-image">
+      <img src="img\gallery-pictures\aesthetic-image2.png" alt="">
+      <img src="img\gallery-pictures\aesthetic-image3.png" alt="">
+      <img src="img\gallery-pictures\aesthetic-image4.png" alt="">
+      <img src="img\gallery-pictures\aesthetic-image5.png" alt="">
+      <img src="img\gallery-pictures\aesthetic-image6.png" alt="">
+      <img src="img\gallery-pictures\aesthetic-image7.png" alt="">
+      <img src="img\gallery-pictures\aesthetic-image8.png" alt="">
+    </div>
+  </dialog>
+
+  <!-- Game Launcher App -->
+  <dialog class="app-modal" id="gameApp">
+    <button class="close-btn" id="closeGame">X</button>
+    <div class="form-container">
+      <p>Scenic Autumn re-launches soon! <br> Subscribe for updates</p>
+      <form id ="form" action="/">
+        <input type="email" name="email" id="email" placeholder=" Email" required>
+        <input type="submit" value=" Subscribe ">
+        <div class="confirmation"></div>
+      </form>
+    </div>
+  </dialog>
+</body>
+</html>
